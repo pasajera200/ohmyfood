@@ -89,31 +89,34 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 32px;
+  gap: 15px;
   list-style-type: none;
 }
 
 .explication li {
   background-color: #f3f3f3;
   padding: 36px 52px;
+  margin-right: 60px;
   border-radius: 32px;
   flex-grow: 1;
   box-shadow: 2px 1px 8px -3px black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .explication li i {
-  margin-right: 16px;
+  margin-right: 20px;
   border-radius: 50%;
-  margin-left: 16px;
+  margin-left: 90px;
 }
 
 .etapes {
-  margin-right: 0px;
+  margin-right: px;
   color: white;
   background-color: #9356dc;
-  right: 60px;
+  right: px;
   border-radius: 50%;
-  margin: -10px;
+  margin: -65px;
   padding: 10px;
 }
 
@@ -134,7 +137,7 @@ header {
 
 .card_menu {
   width: 45%;
-  height: 430px;
+  height: 415px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 6px var(--lightgrey);
@@ -178,4 +181,14 @@ header {
   margin-right: 0px;
   font-size: 25px;
   color: ;
+}
+
+/*Footer*/
+
+.footer {
+  margin-left: 13px;
+}
+
+#ohmyfood {
+  font-family: "Shrikhand", cursive;
 }
