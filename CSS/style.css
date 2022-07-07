@@ -19,7 +19,7 @@ html {
 }
 
 main {
-  padding: 0 16px;
+  padding: 0 0px;
 }
 
 header {
@@ -29,7 +29,30 @@ header {
   box-shadow: 1px 3px 1px 0 lightgray;
   padding: 0.02px;
   margin: 0px;
-  position: relative;
+}
+
+.fa-arrow-left {
+  margin-right: 0px;
+}
+
+.fleche {
+  display: flex;
+  align-items: baseline;
+  margin-left: 100px;
+}
+/*Couverture*/
+
+.couverture {
+  width: 100%;
+}
+
+.image_couverture {
+  max-width: 100%;
+  max-height: 40%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 70%;
 }
 
 /*Localisation*/
@@ -65,7 +88,7 @@ header {
   font-size: 28px;
 }
 
-.reserver button {
+.button {
   font-weight: 300;
   font-size: 18px;
   padding: 20px 20px;
@@ -95,8 +118,8 @@ header {
 
 .explication li {
   background-color: #f3f3f3;
-  padding: 36px 52px;
-  margin-right: 60px;
+  padding: 30px 46px;
+  margin-right: 40px;
   border-radius: 32px;
   flex-grow: 1;
   box-shadow: 2px 1px 8px -3px black;
@@ -111,41 +134,47 @@ header {
 }
 
 .etapes {
-  margin-right: px;
+  width: 30px;
+  height: 10px;
   color: white;
   background-color: #9356dc;
-  right: px;
   border-radius: 50%;
-  margin: -65px;
-  padding: 10px;
+  margin: -70px;
+  padding: 8px 15px 8px 15px;
 }
 
-.menus h2 {
-  margin-left: 27px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+/*Liste restaurants*/
+.restaurants {
+  background-color: #f3f3f3;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  height: 1050px;
 }
 
-.menus_conteneur {
+.restaurants h2 {
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+}
+
+.restaurants_conteneur {
   display: flex;
   flex-wrap: wrap;
-  gap: 0px;
   justify-content: space-around;
-  margin-bottom: 0px;
-  background-color: #f3f3f3;
 }
 
-.card_menu {
+.restaurants_menu {
   width: 45%;
   height: 415px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 6px var(--lightgrey);
-  gap: 50px;
-  margin-top: 60px;
+  gap: 0px;
+  margin-top: 40px;
 }
 
-.image_card {
+.image_cardresto {
   border-radius: 20px 20px 0 0;
   height: 350px;
   width: 100%;
@@ -153,18 +182,31 @@ header {
   object-position: 50% 70%;
 }
 
-.info_card {
-  margin-right: 0px;
+.nouveau {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 530px;
+  background-color: #99e2d0;
+  color: black;
+  padding: 7px 17px;
+  border-radius: 3%;
+}
+
+.info_cardresto {
+  margin-right: 50px;
   display: flex;
   justify-content: space-around;
   margin-top: 0px;
 }
 
 .restaurant_nom {
-  margin-right: 400px;
+  width: 100%;
+  margin-right: 300px;
   margin-bottom: 0px;
   margin-top: 5px;
-  margin-left: 0px;
+  margin-left: 20px;
   gap: 10px;
   font-size: 18px;
 }
@@ -175,20 +217,172 @@ header {
 
 .coeur {
   display: flex;
-  margin-left: 20px;
+  margin-left: 620px;
   margin-bottom: 10px;
   margin-top: 10px;
   margin-right: 0px;
   font-size: 25px;
-  color: ;
+  position: absolute;
 }
 
-/*Footer*/
+/*Menus restaurants*/
+.restaurant_titre {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  padding-top: 30px;
+}
 
+.restaurant_titre i {
+  margin-left: 820px;
+  margin-right: 0;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.menus button {
+  width: 15%;
+  font-weight: 300;
+  font-size: 18px;
+  border: none;
+  border-radius: 32px;
+  margin-top: 50px;
+  margin-bottom: 130px;
+  margin-left: 540px;
+  background: linear-gradient(to bottom right, #e771da, #a35bdc);
+  color: white;
+  box-shadow: 5px 5px 20px #cfcfcf;
+}
+
+.menus {
+  width: 80%;
+  background-color: #f3f3f3;
+  border-radius: 35px;
+  margin-left: 140px;
+  margin-top: -100px;
+  position: relative;
+}
+
+.ligne_verte {
+  padding: 2px 30px;
+  background-color: #99e2d0;
+  margin-left: 40px;
+  margin-top: -35px;
+  position: absolute;
+}
+
+.menu_restos h3 {
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.menu_restos ol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.menu_restos li {
+  width: 100%;
+  background-color: white;
+  padding: 0px 15px;
+  margin-right: 0px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 8px -3px black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menus_conteneur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.nom1 {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.nom2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+
+  font-weight: normal;
+}
+
+.nom3 {
+  width: 100%;
+  margin-right: 30px;
+}
+
+.prix {
+  display: flex;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+/*Footer*/
 .footer {
-  margin-left: 13px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: white;
+  background-color: #353535;
+}
+
+footer img {
+  filter: invert(100%);
+  margin-top: 17px;
+  margin-bottom: 15px;
+  width: 8%;
+  height: 10%;
 }
 
 #ohmyfood {
+  font-size: 17px;
   font-family: "Shrikhand", cursive;
+}
+
+#proposer i {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#devenir i {
+  margin-right: 14px;
+  margin-bottom: 10px;
+}
+
+#mentions {
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-bottom: 10px;
 }

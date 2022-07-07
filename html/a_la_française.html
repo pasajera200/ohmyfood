@@ -7,39 +7,198 @@
     <title>ohmyfood</title>
     <!--Fichiers CSS-->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_telephone.css" />
+    <!--Icônes Fontawesome-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <!--Barre de navigation-->
     <header>
+      <div class="fleche"> <span><a href="index.html"><i class="fa-solid fa-arrow-left"></i></span></a>
       <h1>ohmyfood</h1>
     </header>
 
-    <main>
-      <section class="localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        <h2>Paris, Belleville</h2>
+     <!--Couverture-->
+     <main>
+      <section class="couverture">
+        <img
+          class="image_couverture"
+          src="../assets/images/restaurants/a_la_francaise.jpg"
+          alt="La palette du goût"
+        />
       </section>
 
-      <!--Explorer et réserver-->
-      <section class="reserver">
-        <h2>
-          Réserver le menu qui <br />
-          vous convient
-        </h2>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <button>Explorer nos restaurants</button>
-      </section>
+      <!--Menus restaurants-->
+      <section class="menus">
+        <div class= "restaurant_titre"><h2>À la française</h2><i class="fa-regular fa-heart"></i></div>
+        <div class="menus_conteneur">
 
-      <!--Fonctionnement-->
-      <section class="explication">
-        <h2>Fonctionnement</h2>
-        <ol>
-          <li>Choisissez un restaurant</li>
-          <li>Composez votre menu</li>
-          <li>Dégustez au restaurant</li>
-        </ol>
-      </section>
+        <div class="menu_restos">
+          <h3>ENTREES</h3>
+          <span class="ligne_verte"></span>
+          <ol>
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Tartare de poulpe acidulé</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Aux zets d'orange</div><div class="prix">
+                 25€
+                </div>
+              </div>  
+            </li>
+
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Velouté de légumes d'antan</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Carotte, panais, topinambour</div><div class="prix">
+                 35€
+                </div>
+              </div>  
+            </li>
+
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Soupe à l'oignon</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Révisité</div><div class="prix">
+                 25€
+                </div>
+              </div>  
+            </li>
+          </div>
+
+          <div class="menu_restos">
+            <h3>PLATS</h3>
+            <span class="ligne_verte"></span>
+            <ol>
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Coquilles Saint-Jacques</Saint-Jacques></strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Accompagnées d'une purée de panais</div><div class="prix">
+                   40€
+                  </div>
+                </div>  
+              </li>
+  
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Magret de canard</strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Et parmentier de pommes de terres</div><div class="prix">
+                   35€
+                  </div>
+                </div>  
+              </li>
+  
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Pigeonneau d'îlle-et-Villaine</strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Sur son lit de gnocchis aux légumes</div><div class="prix">
+                   44€
+                  </div>
+                </div>  
+              </li>
+            </div>
+
+            <div class="menu_restos">
+              <h3>DESSERTS</h3>
+              <span class="ligne_verte"></span>
+              <ol>
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Pétales de violettes glacé</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Et purée de noisette</div><div class="prix">
+                     18€
+                    </div>
+                  </div>  
+                </li>
+    
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Fondant au chocolat</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Revisité</div><div class="prix">
+                     22€
+                    </div>
+                  </div>  
+                </li>
+    
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Mille feuille croustillant</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Myrtille et pâte d'amande</div><div class="prix">
+                     23€
+                    </div>
+                  </div>  
+                </li>
+              </div>
+</div> 
+<button class="button">Commander</button>
+    </section>
     </main>
+
+    <footer>
+      <div class="footer">
+        
+        <div id="ohmyfood"><img
+          src="../assets/images/logo/ohmyfood.png"
+          alt="La palette du goût"
+        /> </h3></div>
+        <div id="proposer">
+          <i class="fa-solid fa-utensils"></i>
+          Proposer un restaurant
+        </div>
+        <div id="devenir">
+          <i class="fa-solid fa-handshake-angle"></i>
+          Devenir partenaire</h3>
+        </div>
+        <div id="mentions">Mentions légales</div>
+        <div id="contact">Contact</div>
+      </div>
+    </footer>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

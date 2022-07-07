@@ -7,39 +7,204 @@
     <title>ohmyfood</title>
     <!--Fichiers CSS-->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_telephone.css" />
+    <!--Icônes Fontawesome-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <!--Barre de navigation-->
     <header>
+      <div class="fleche"><span><a href="index.html"><i class="fa-solid fa-arrow-left"></i></span></a>
       <h1>ohmyfood</h1>
     </header>
 
-    <main>
-      <section class="localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        <h2>Paris, Belleville</h2>
+     <!--Couverture-->
+     <main>
+      <section class="couverture">
+        <img
+          class="image_couverture"
+          src="../assets/images/restaurants/la_note_enchantee.jpg"
+          alt="La palette du goût"
+        />
       </section>
 
-      <!--Explorer et réserver-->
-      <section class="reserver">
-        <h2>
-          Réserver le menu qui <br />
-          vous convient
-        </h2>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <button>Explorer nos restaurants</button>
-      </section>
+      <!--Menus restaurants-->
+      <section class="menus">
+        <div class= "restaurant_titre"><h2>La note enchantée</h2><i class="fa-regular fa-heart"></i></div>
+        <div class="menus_conteneur">
 
-      <!--Fonctionnement-->
-      <section class="explication">
-        <h2>Fonctionnement</h2>
-        <ol>
-          <li>Choisissez un restaurant</li>
-          <li>Composez votre menu</li>
-          <li>Dégustez au restaurant</li>
-        </ol>
-      </section>
+        <div class="menu_restos">
+          <h3>ENTREES</h3>
+          <span class="ligne_verte"></span>
+          <ol>
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Ravioles de foie gras</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Accompagnés de leur crème à la truffe</div><div class="prix">
+                 25€
+                </div>
+              </div>  
+            </li>
+
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Caviar osciètre</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Sur blini à la farine de blé noir</div><div class="prix">
+                 35€
+                </div>
+              </div>  
+            </li>
+
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Homard et espuma de...</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Mariné aux zets d'orange</div><div class="prix">
+                 20€
+                </div>
+              </div>  
+            </li>
+
+            <li>
+              <div class="info">
+                  <div class="nom1">
+                    <strong>Foie gras de canard cuit entier</strong>
+                  </div>
+                  <div class="nom2">
+                    <div class="nom3">Confiture de figue et pain toasté</div><div class="prix">
+                 35€
+                </div>
+              </div>  
+            </li>
+          </div>
+
+          
+
+
+
+          <div class="menu_restos">
+            <h3>PLATS</h3>
+            <span class="ligne_verte"></span>
+            <ol>
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Noix de coquilles Saint-Jacques</strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Sur lit de purée de celeri-rave</div><div class="prix">
+                   40€
+                  </div>
+                </div>  
+              </li>
+  
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Langoustine poêlée</strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Purée de patate douce</div><div class="prix">
+                   35€
+                  </div>
+                </div>  
+              </li>
+  
+              <li>
+                <div class="info">
+                    <div class="nom1">
+                      <strong>Mijoté de queue de boeuf</strong>
+                    </div>
+                    <div class="nom2">
+                      <div class="nom3">Et  riz sauvage aux zets de citron</div><div class="prix">
+                   44€
+                  </div>
+                </div>  
+              </li>
+            </div>
+
+            <div class="menu_restos">
+              <h3>DESSERTS</h3>
+              <span class="ligne_verte"></span>
+              <ol>
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Macaron noisetté et chocolat</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Glace au caramel brun et sel de Guérande</div><div class="prix">
+                     18€
+                    </div>
+                  </div>  
+                </li>
+    
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Baba au rhrum revisité</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Avec son coulis de citron</div><div class="prix">
+                     22€
+                    </div>
+                  </div>  
+                </li>
+    
+                <li>
+                  <div class="info">
+                      <div class="nom1">
+                        <strong>Tarte au citron meringuée</strong>
+                      </div>
+                      <div class="nom2">
+                        <div class="nom3">Destructuré</div><div class="prix">
+                     23€
+                    </div>
+                  </div>  
+                </li>
+              </div>
+</div> 
+<button class="button">Commander</button>
+    </section>
     </main>
+
+    <footer>
+      <div class="footer">
+        
+        <div id="ohmyfood"><img
+          src="../assets/images/logo/ohmyfood.png"
+          alt="La palette du goût"
+        /> </h3></div>
+        <div id="proposer">
+          <i class="fa-solid fa-utensils"></i>
+          Proposer un restaurant
+        </div>
+        <div id="devenir">
+          <i class="fa-solid fa-handshake-angle"></i>
+          Devenir partenaire</h3>
+        </div>
+        <div id="mentions">Mentions légales</div>
+        <div id="contact">Contact</div>
+      </div>
+    </footer>
   </body>
 </html>
+
+
+

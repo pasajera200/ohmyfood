@@ -25,6 +25,7 @@
       <h1>ohmyfood</h1>
     </header>
 
+    <!--Localisation-->
     <main>
       <section class="localisation">
         <i class="fa-solid fa-location-dot"></i>
@@ -35,7 +36,7 @@
       <section class="reserver">
         <h2>Réserver le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <button>Explorer nos restaurants</button>
+        <button class="button">Explorer nos restaurants</button>
       </section>
 
       <!--Fonctionnement-->
@@ -58,19 +59,23 @@
         </ol>
       </section>
 
-      <!--Ménus restaurants-->
-      <section class="menus">
+      <!--Liste restaurants-->
+      <section class="restaurants">
         <h2>Restaurants</h2>
-        <div class="menus_conteneur">
-          <div class="card_menu">
+        <div class="restaurants_conteneur">
+          
+          <div class="restaurants_menu">
+            <a href="la_palette_du_gout.html">
+             <div class="nouveau"><span>Nouveau</span></div>
             <div>
               <img
-                class="image_card"
+                class="image_cardresto"
                 src="../assets/images/restaurants/la_palette_du_gout.jpg"
                 alt="La palette du goût"
               />
+            </a>
             </div>
-            <div class="info_card">
+            <div class="info_cardresto">
               <div class="restaurant_nom">
                 <div class="restaurant_nom1">
                   <strong> La palette du goût</strong>
@@ -84,15 +89,16 @@
             </div>
           </div>
 
-          <div class="card_menu">
+          <div class="restaurants_menu">
+            <div class="nouveau"><span>Nouveau</span></div>
             <div>
               <img
-                class="image_card"
+                class="image_cardresto"
                 src="../assets/images/restaurants/la_note_enchantee.jpg"
                 alt="La palette du goût"
               />
             </div>
-            <div class="info_card">
+            <div class="info_cardresto">
               <div class="restaurant_nom">
                 <div class="restaurant_nom1">
                   <strong>La note enchantée</strong>
@@ -105,15 +111,16 @@
             </div>
           </div>
 
-          <div class="card_menu">
+          <div class="restaurants_menu">
+          
             <div>
               <img
-                class="image_card"
+                class="image_cardresto"
                 src="../assets/images/restaurants/a_la_francaise.jpg"
                 alt="La palette du goût"
               />
             </div>
-            <div class="info_card">
+            <div class="info_cardresto">
               <div class="restaurant_nom">
                 <div class="restaurant_nom1">
                   <strong>À la française</strong>
@@ -127,15 +134,16 @@
             </div>
           </div>
 
-          <div class="card_menu">
+          <div class="restaurants_menu">
+            
             <div>
               <img
-                class="image_card"
+                class="image_cardresto"
                 src="../assets/images/restaurants/le_delice_des_sens.jpg"
                 alt="La palette du goût"
               />
             </div>
-            <div class="info_card">
+            <div class="info_cardresto">
               <div class="restaurant_nom">
                 <div class="restaurant_nom1">
                   <strong>Le délice des sens</strong>
@@ -151,13 +159,25 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer">
-        <div id="ohmyfood"><h3>ohmyfood</h3></div>
-        <div><h3>Proposer un restaurant</h3></div>
-        <div><h3>Devenir partenaire</h3></div>
-        <div><h3>Mentions légales</h3></div>
-        <div><h3>Contact</h3></div>
+        
+        <div id="ohmyfood"><img
+
+          src="../assets/images/logo/ohmyfood.png"
+          alt="La palette du goût"
+        /> </h3></div>
+        <div id="proposer">
+          <i class="fa-solid fa-utensils"></i>
+          Proposer un restaurant
+        </div>
+        <div id="devenir">
+          <i class="fa-solid fa-handshake-angle"></i>
+          Devenir partenaire</h3>
+        </div>
+        <div id="mentions">Mentions légales</div>
+        <div id="contact">Contact</div>
       </div>
     </footer>
   </body>
