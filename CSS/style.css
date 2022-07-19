@@ -38,7 +38,12 @@ header {
 .fleche {
   display: flex;
   align-items: baseline;
-  margin-left: 100px;
+  margin-left: 150px;
+}
+
+.ohmyfood h1
+{
+  margin-left:  520px;
 }
 /*Couverture*/
 
@@ -95,6 +100,7 @@ header {
   border: none;
   border-radius: 32px;
   margin-top: 16px;
+  margin-bottom: 20px;
   background: linear-gradient(to bottom right, #e771da, #a35bdc);
   color: white;
   box-shadow: 5px 5px 20px #cfcfcf;
@@ -103,7 +109,7 @@ header {
 /*Fonctionnement*/
 
 .explication h2 {
-  margin-left: 27px;
+  margin-left: 205px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -111,26 +117,25 @@ header {
 .explication ol {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15px;
+  justify-content: center;
+  gap: 100px;
   list-style-type: none;
+  margin-right: 40px;
 }
 
 .explication li {
   background-color: #f3f3f3;
-  padding: 30px 46px;
-  margin-right: 40px;
+  padding: 20px 25px;
   border-radius: 32px;
-  flex-grow: 1;
   box-shadow: 2px 1px 8px -3px black;
   font-weight: bold;
   font-size: 20px;
 }
 
 .explication li i {
-  margin-right: 20px;
+  margin-right: 15px;
   border-radius: 50%;
-  margin-left: 90px;
+  margin-left: 50px;
 }
 
 .etapes {
@@ -139,7 +144,7 @@ header {
   color: white;
   background-color: #9356dc;
   border-radius: 50%;
-  margin: -70px;
+  margin: -40px;
   padding: 8px 15px 8px 15px;
 }
 
@@ -147,36 +152,33 @@ header {
 .restaurants {
   background-color: #f3f3f3;
   margin-top: 70px;
-  margin-bottom: 0px;
-  height: 1050px;
+  height: 1000px;
 }
 
 .restaurants h2 {
-  margin-left: 40px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 40px;
+  margin-left: 205px;
+  margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .restaurants_conteneur {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:center;
+  gap: 60px;
 }
 
 .restaurants_menu {
-  width: 45%;
-  height: 415px;
+  width: 35%;
+  height: 385px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 6px var(--lightgrey);
-  gap: 0px;
-  margin-top: 40px;
 }
 
 .image_cardresto {
   border-radius: 20px 20px 0 0;
-  height: 350px;
+  height: 320px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 70%;
@@ -187,7 +189,7 @@ header {
   justify-content: right;
   position: absolute;
   margin-top: 21px;
-  margin-left: 530px;
+  margin-left: 440px;
   background-color: #99e2d0;
   color: black;
   padding: 7px 17px;
@@ -195,6 +197,7 @@ header {
 }
 
 .info_cardresto {
+  width: 100%;
   margin-right: 50px;
   display: flex;
   justify-content: space-around;
@@ -203,7 +206,7 @@ header {
 
 .restaurant_nom {
   width: 100%;
-  margin-right: 300px;
+  margin-right: 260px;
   margin-bottom: 0px;
   margin-top: 5px;
   margin-left: 20px;
@@ -215,19 +218,65 @@ header {
   font-weight: bold;
 }
 
-.coeur {
+.coeur  {
   display: flex;
-  margin-left: 620px;
+  margin-left: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-right: 0px;
-  font-size: 25px;
-  position: absolute;
+  margin-right: 20px;
+  font-size: 33px;
+  position: relative;
+  cursor: pointer;
+  
 }
+
+.fa-regular {
+  margin-left:-33px;
+
+}
+
+
+
+.violet {
+color:transparent;
+background:linear-gradient(to bottom right, #e771da, #a35bdc);
+background-clip:text;
+-webkit-background-clip:text;
+opacity: 0;
+
+}
+
+
+background-clip: text;
+-webkit-background-clip: text;
+background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
+
+
+
+.coeur:nth-child(2)  {
+  position:absolute;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+
+  
+}
+
+ .violet:hover{
+  opacity: 1;
+  transform:  scale(1.1);
+}
+
+.fa-regular:hover {
+  color: transparent;
+
+}
+
+
 
 /*Menus restaurants*/
 .restaurant_titre {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: "Shrikhand", cursive;
@@ -235,11 +284,14 @@ header {
   padding-top: 30px;
 }
 
+.restaurant_titre h2 {
+  width: 100%;
+  margin-left: 40px;
+}
 .restaurant_titre i {
-  margin-left: 820px;
-  margin-right: 0;
+  margin-right: 35px;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .menus button {
@@ -249,7 +301,7 @@ header {
   border: none;
   border-radius: 32px;
   margin-top: 50px;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
   margin-left: 540px;
   background: linear-gradient(to bottom right, #e771da, #a35bdc);
   color: white;
@@ -259,8 +311,8 @@ header {
 .menus {
   width: 80%;
   background-color: #f3f3f3;
-  border-radius: 35px;
-  margin-left: 140px;
+  border-radius: 35px 35px 0 0;
+  margin-left: 150px;
   margin-top: -100px;
   position: relative;
 }
@@ -268,44 +320,49 @@ header {
 .ligne_verte {
   padding: 2px 30px;
   background-color: #99e2d0;
-  margin-left: 40px;
+  margin-left: 2px;
   margin-top: -35px;
   position: absolute;
 }
 
 .menu_restos h3 {
-  margin-left: 40px;
-  margin-top: 50px;
+  margin-left: 0px;
+  margin-top: 30px;
   margin-bottom: 40px;
   font-size: 17px;
 }
 
-.menu_restos ol {
+.menu_restos{
+  gap: 0px;
+}
+.menu_resto {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-right: 150px;
-  gap: 30px;
-  list-style-type: none;
+  gap: 20px;
+
 }
 
-.menu_restos li {
+ .card_resto{
   width: 100%;
   background-color: white;
-  padding: 0px 15px;
-  margin-right: 0px;
-  border-radius: 15px;
+  padding: 0px 0px 0px 10px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 20px;
   box-shadow: 2px 1px 8px -3px black;
   font-weight: bold;
   font-size: 16px;
+  gap: 0px;
 }
 
 .menus_conteneur {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 0px;
-  margin-right: 40px;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .info {
@@ -322,6 +379,9 @@ header {
   width: 100%;
   font-weight: bold;
   margin-top: 0px;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nom2 {
@@ -330,24 +390,69 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   width: 100%;
-
+font-size: 16px;
   font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
+
 
 .nom3 {
   width: 100%;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 0px;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
+
 
 .prix {
   display: flex;
   margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 20px;
 }
+
+.info_card {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+ cursor: pointer;
+}
+
+.validation {
+  width: 20%;
+  margin-right: -100px;
+  display: flex;
+  border-radius: 0 15px   15px  0;
+  background-color: #99E2D0; 
+  
+  cursor: pointer;
+  transition: margin-right 2s;
+}
+
+.info_card:nth-child(6) {
+  cursor: pointer;
+}
+
+ .validation:hover  {
+  margin-right: 10px;
+}
+
+.card_resto:nth-child(4) {
+  margin-right: 0px;
+}
+
+
+
 /*Footer*/
 .footer {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
   padding-bottom: 20px;
