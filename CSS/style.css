@@ -45,6 +45,8 @@ header {
 {
   margin-left:  520px;
 }
+
+
 /*Couverture*/
 
 .couverture {
@@ -201,7 +203,6 @@ header {
   margin-right: 50px;
   display: flex;
   justify-content: space-around;
-  margin-top: 0px;
 }
 
 .restaurant_nom {
@@ -232,46 +233,124 @@ header {
 
 .fa-regular {
   margin-left:-33px;
-
 }
 
 
 
-.violet {
-color:transparent;
-background:linear-gradient(to bottom right, #e771da, #a35bdc);
-background-clip:text;
--webkit-background-clip:text;
-opacity: 0;
-
+/*Liste restaurants*/
+.restaurants {
+  background-color: #f3f3f3;
+  margin-top: 70px;
+  height: 1000px;
 }
 
+.restaurants h2 {
+  margin-left: 205px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
 
-background-clip: text;
--webkit-background-clip: text;
-background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
+.restaurants_conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 60px;
+}
 
+.restaurants_menu {
+  width: 35%;
+  height: 385px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 6px var(--lightgrey);
+}
 
+.image_cardresto {
+  border-radius: 20px 20px 0 0;
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
 
-.coeur:nth-child(2)  {
-  position:absolute;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
+.nouveau {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 440px;
+  background-color: #99e2d0;
+  color: black;
+  padding: 7px 17px;
+  border-radius: 3%;
+}
+
+.info_cardresto {
+  width: 100%;
+  margin-right: 0px;
+  display: flex;
+  margin-top: 0px;
+}
+
+.restaurant_nom h3 {
+margin-top: 5px;
+}
+.restaurant_nom {
+  margin-right: 0px;
+
+  margin-top: 0px;
+  margin-left: 20px;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.restaurant_nom1 {
 
   
+  font-weight: bold;
 }
 
- .violet:hover{
+.restaurant_nom2 {
+  margin-top: -20px;
+}
+
+
+.coeur {
+  margin-left: 70px;
+}
+
+.violet {
+  color:transparent;
+  background:linear-gradient(to bottom right, #e771da, #a35bdc);
+  background-clip:text;
+  -webkit-background-clip:text;
+  height: 50px;
+  opacity: 0;
+  }
+
+.violet:hover {
   opacity: 1;
-  transform:  scale(1.1);
+  transform: scale(1.1);
+  transition:  all .1s;
+  animation-name: remplir;
+  animation-duration: 1s;
 }
 
-.fa-regular:hover {
-  color: transparent;
+@keyframes  remplir {
+  from {
+   height: 0px;
+  }
 
+  to {
+  height: 50px;
+  }
 }
+
+
+
+
+
+
 
 
 
@@ -335,13 +414,13 @@ background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
 .menu_restos{
   gap: 0px;
 }
+
 .menu_resto {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-right: 150px;
   gap: 20px;
-
 }
 
  .card_resto{
@@ -366,6 +445,9 @@ background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
 }
 
 .info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -380,8 +462,7 @@ background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
   font-weight: bold;
   margin-top: 0px;
   font-size: 18px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  
 }
 
 .nom2 {
@@ -390,27 +471,27 @@ background-image: linear-gradient(to bottom right, #e771da, #a35bdc);
   margin-left: 0px;
   margin-right: 0px;
   width: 100%;
-font-size: 16px;
+ font-size: 16px;
   font-weight: normal;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+ 
 }
 
 
 .nom3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 0px;
   font-size: 16px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 
 .prix {
   display: flex;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 10px;
+  margin-right: 15px;
   margin-bottom: 20px;
 }
 
@@ -422,30 +503,27 @@ font-size: 16px;
   padding: 0;
   margin: 0;
  cursor: pointer;
+ transition: margin-right .5s;
 }
 
-.validation {
-  width: 20%;
+.info_card .validation {
+  width: 25%;
   margin-right: -100px;
   display: flex;
+  align-items: center;
   border-radius: 0 15px   15px  0;
   background-color: #99E2D0; 
-  
   cursor: pointer;
-  transition: margin-right 2s;
+  transition: margin-right 1s;
 }
 
-.info_card:nth-child(6) {
-  cursor: pointer;
-}
-
- .validation:hover  {
-  margin-right: 10px;
-}
-
-.card_resto:nth-child(4) {
+.info_card:hover  .validation:hover{
   margin-right: 0px;
 }
+
+
+
+ 
 
 
 
