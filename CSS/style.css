@@ -106,12 +106,18 @@ header {
   background: linear-gradient(to bottom right, #e771da, #a35bdc);
   color: white;
   box-shadow: 5px 5px 20px #cfcfcf;
+  cursor: pointer;
+  
 }
 
+.button:hover {
+  background: linear-gradient(to bottom right, #f1ace9, #d0b9e4);
+  box-shadow: 5px 5px 20px #aaa7a7;
+}
 /*Fonctionnement*/
 
 .explication h2 {
-  margin-left: 205px;
+  margin-left: 270px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -120,7 +126,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   list-style-type: none;
   margin-right: 40px;
 }
@@ -158,9 +164,7 @@ header {
 }
 
 .restaurants h2 {
-  margin-left: 205px;
-  margin-bottom: 30px;
-  padding-top: 50px;
+  margin-left: 270px;
 }
 
 .restaurants_conteneur {
@@ -191,7 +195,7 @@ header {
   justify-content: right;
   position: absolute;
   margin-top: 21px;
-  margin-left: 440px;
+  margin-left: 20px;
   background-color: #99e2d0;
   color: black;
   padding: 7px 17px;
@@ -219,21 +223,7 @@ header {
   font-weight: bold;
 }
 
-.coeur  {
-  display: flex;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-right: 20px;
-  font-size: 33px;
-  position: relative;
-  cursor: pointer;
-  
-}
 
-.fa-regular {
-  margin-left:-33px;
-}
 
 
 
@@ -245,7 +235,7 @@ header {
 }
 
 .restaurants h2 {
-  margin-left: 205px;
+  margin-left: 270px;
   margin-bottom: 30px;
   padding-top: 50px;
 }
@@ -254,20 +244,22 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  gap: 60px;
+  gap:0;
 }
 
 .restaurants_menu {
-  width: 35%;
-  height: 385px;
+  width: 30%;
+  height: 350px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 6px var(--lightgrey);
+  margin-bottom: 50px;
+  
 }
 
 .image_cardresto {
   border-radius: 20px 20px 0 0;
-  height: 320px;
+  height: 280px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 70%;
@@ -278,7 +270,7 @@ header {
   justify-content: right;
   position: absolute;
   margin-top: 21px;
-  margin-left: 440px;
+  margin-left: 360px;
   background-color: #99e2d0;
   color: black;
   padding: 7px 17px;
@@ -293,30 +285,41 @@ header {
 }
 
 .restaurant_nom h3 {
-margin-top: 5px;
+ margin-top: 5px;
 }
+
 .restaurant_nom {
   margin-right: 0px;
-
   margin-top: 0px;
   margin-left: 20px;
-  gap: 20px;
+  gap: 0px;
   font-size: 18px;
 }
 
 .restaurant_nom1 {
-
-  
-  font-weight: bold;
+font-size: 16px;
+font-weight: bold;
 }
 
 .restaurant_nom2 {
-  margin-top: -20px;
+margin-top: -18px;
+  
 }
 
-
-.coeur {
+.coeur  {
+  display: flex;
   margin-left: 70px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 33px;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.fa-regular {
+  margin-left:-33px;
 }
 
 .violet {
@@ -331,9 +334,9 @@ margin-top: 5px;
 .violet:hover {
   opacity: 1;
   transform: scale(1.1);
-  transition:  all .1s;
+  transition: all .1s;
   animation-name: remplir;
-  animation-duration: 1s;
+  animation-duration: .5s;
 }
 
 @keyframes  remplir {
@@ -345,11 +348,6 @@ margin-top: 5px;
   height: 50px;
   }
 }
-
-
-
-
-
 
 
 
