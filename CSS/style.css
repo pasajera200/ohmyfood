@@ -111,7 +111,7 @@ header {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom right, #f1ace9, #d0b9e4);
+  background: linear-gradient(to bottom right, #ec81e0, #ae7ad8);
   box-shadow: 5px 5px 20px #aaa7a7;
 }
 /*Fonctionnement*/
@@ -122,7 +122,7 @@ header {
   margin-bottom: 30px;
 }
 
-.explication ol {
+.explication ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,7 +336,7 @@ margin-top: -18px;
   transform: scale(1.1);
   transition: all .1s;
   animation-name: remplir;
-  animation-duration: .5s;
+  animation-duration: 2s;
 }
 
 @keyframes  remplir {
@@ -526,7 +526,7 @@ margin-top: -18px;
 
 
 /*Footer*/
-.footer {
+footer {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -535,7 +535,20 @@ margin-top: -18px;
   padding-left: 40px;
   color: white;
   background-color: #353535;
+  
 }
+
+footer ul {
+  list-style: none;
+  margin-left: -38px;
+  margin-top: 0px;
+}
+
+.lien_footer {
+color:white;
+text-decoration: none;
+}
+
 
 footer img {
   filter: invert(100%);
