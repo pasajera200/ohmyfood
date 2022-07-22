@@ -35,8 +35,8 @@ header {
   font-size: 20px;
   text-align: center;
   box-shadow: 1px 3px 1px 0 lightgray;
-  padding: 0.02px;
-  margin: 0px;
+  padding: 15px;
+  
 }
 
 .fa-arrow-left {
@@ -79,7 +79,7 @@ header {
   background-color: #eaeaea;
   box-shadow: 2px 1px 8px -3px black;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   gap: 16px;
 }
 
@@ -243,7 +243,7 @@ font-weight: bold;
 }
 
 .restaurant_nom2 {
-margin-top: -18px;
+margin-top: 0px;
   
 }
 
@@ -276,18 +276,6 @@ margin-top: -18px;
   opacity: 1;
   transform: scale(1.1);
   transition: all .1s;
-  animation-name: remplir;
-  animation-duration: 2s;
-}
-
-@keyframes  remplir {
-  from {
-   height: 0px;
-  }
-
-  to {
-  height: 50px;
-  }
 }
 
 
@@ -373,15 +361,11 @@ margin-top: -18px;
   width: 100%;
 background-color: white;
 border-radius: 10px;
-text-overflow: ellipsis;
-white-space: nowrap;
 }
 
 
 .info {
-text-overflow: ellipsis;
-white-space: nowrap;
-padding: 15px 0 15px 15px;
+padding: 15px 15px 10px 15px;
 width: 100%;
 }
 
@@ -394,11 +378,12 @@ width: 100%;
 .info_card {
 display: flex;
 justify-content: flex-end;
-margin-top: 0px;
-cursor: pointer;
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
+
+margin-top: 0px;
+cursor: pointer;
 
 
 }
@@ -406,44 +391,55 @@ white-space: nowrap;
 
 .prix {
 display: flex;
-font-weight: 900;
-padding-bottom: 15px ; 
-padding-right: 25px;
+font-weight: 700;
+margin-bottom: 10px ;
+padding-right: 25px; 
+margin-left: 0px;
 display: flex;
 align-items:flex-end;
 }
 
 
 
-
-.validation{
-
-  text-overflow: ellipsis;
-white-space: nowrap;
+ .validation{
   background-color: #99e2d0;
   border-radius: 0 10px 10px  0 ;
   width: 80px;
-  margin-right: -68px;
-  transition: all 0.1s;
- animation-fill-mode: both;
+  margin-right: -60px;
+  padding: 0;
+  transition:  0.3s;
+ animation-fill-mode: ;
 }
 
 .fa-check {
+  margin-left: 15px;
+  margin-top: 22px;
   font-size: 16px;
   color:#99e2d0;
-  display: grid;
-place-items: center;
   border-radius: 50%;
-  width:30px;
+  padding:5px;
   background-color: white;
 border-radius: 50%;
-   
- 
+}
+
+.fa-check:hover {
+  animation-name: rotation;
+  animation-duration: 0.5s;
 }
   
 
+@keyframes rotation {
+  from {
+    transform:rotate(-270deg);
+  }
 
-:hover .validation{
+  to {
+    transform: rotate(0);
+  }
+}
+
+
+.validation:hover {
     margin-right: 0;
     
     
