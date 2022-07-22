@@ -22,6 +22,14 @@ main {
   padding: 0 0px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
@@ -69,6 +77,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
+  box-shadow: 2px 1px 8px -3px black;
   text-align: center;
   padding: 10px;
   gap: 16px;
@@ -111,7 +120,7 @@ header {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom right, #ec81e0, #ae7ad8);
+  background: linear-gradient(to bottom right, #f0ace8, #ae7ad8);
   box-shadow: 5px 5px 20px #aaa7a7;
 }
 /*Fonctionnement*/
@@ -155,76 +164,6 @@ header {
   margin: -40px;
   padding: 8px 15px 8px 15px;
 }
-
-/*Liste restaurants*/
-.restaurants {
-  background-color: #f3f3f3;
-  margin-top: 70px;
-  height: 1000px;
-}
-
-.restaurants h2 {
-  margin-left: 270px;
-}
-
-.restaurants_conteneur {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  gap: 60px;
-}
-
-.restaurants_menu {
-  width: 35%;
-  height: 385px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0px 5px 6px var(--lightgrey);
-}
-
-.image_cardresto {
-  border-radius: 20px 20px 0 0;
-  height: 320px;
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 70%;
-}
-
-.nouveau {
-  display: flex;
-  justify-content: right;
-  position: absolute;
-  margin-top: 21px;
-  margin-left: 20px;
-  background-color: #99e2d0;
-  color: black;
-  padding: 7px 17px;
-  border-radius: 3%;
-}
-
-.info_cardresto {
-  width: 100%;
-  margin-right: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.restaurant_nom {
-  width: 100%;
-  margin-right: 260px;
-  margin-bottom: 0px;
-  margin-top: 5px;
-  margin-left: 20px;
-  gap: 10px;
-  font-size: 18px;
-}
-
-.restaurant_nom1 {
-  font-weight: bold;
-}
-
-
-
 
 
 /*Liste restaurants*/
@@ -288,7 +227,9 @@ header {
  margin-top: 5px;
 }
 
+
 .restaurant_nom {
+  width: 100%;
   margin-right: 0px;
   margin-top: 0px;
   margin-left: 20px;
@@ -351,25 +292,30 @@ margin-top: -18px;
 
 
 
-
 /*Menus restaurants*/
 .restaurant_titre {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   padding-top: 30px;
+  
 }
 
 .restaurant_titre h2 {
-  width: 100%;
-  margin-left: 40px;
+  margin-right: 750px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
+
+
 .restaurant_titre i {
-  margin-right: 35px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: -2px;
   font-size: 35px;
 }
+
 
 .menus button {
   width: 15%;
@@ -397,132 +343,112 @@ margin-top: -18px;
 .ligne_verte {
   padding: 2px 30px;
   background-color: #99e2d0;
-  margin-left: 2px;
-  margin-top: -35px;
+  margin-top: 55px;
   position: absolute;
 }
 
 .menu_restos h3 {
-  margin-left: 0px;
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 17px;
 }
 
-.menu_restos{
-  gap: 0px;
-}
-
-.menu_resto {
-  width: 100%;
+.menu_restos {
+  width: 26%;
   display: flex;
   flex-direction: column;
-  margin-right: 150px;
+  margin-left: 0px;
   gap: 20px;
-}
-
- .card_resto{
-  width: 100%;
-  background-color: white;
-  padding: 0px 0px 0px 10px;
-  margin-right: 20px;
-  margin-bottom: 25px;
-  border-radius: 20px;
-  box-shadow: 2px 1px 8px -3px black;
-  font-weight: bold;
-  font-size: 16px;
-  gap: 0px;
 }
 
 .menus_conteneur {
   display: flex;
   flex-direction: row;
-  gap: 60px;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
+
+.card_resto {
+  width: 100%;
+background-color: white;
+border-radius: 10px;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+
 .info {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  margin-top: 20px;
-  margin-left: 0px;
+text-overflow: ellipsis;
+white-space: nowrap;
+padding: 15px 0 15px 15px;
+width: 100%;
 }
 
-.nom1 {
-  display: flex;
-  width: 100%;
-  font-weight: bold;
-  margin-top: 0px;
-  font-size: 18px;
-  
-}
+.info p {
+  margin-top: 3px;
 
-.nom2 {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 100%;
- font-size: 16px;
-  font-weight: normal;
- 
 }
 
 
-.nom3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  font-size: 16px;
+.info_card {
+display: flex;
+justify-content: flex-end;
+margin-top: 0px;
+cursor: pointer;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+
 }
 
 
 .prix {
-  display: flex;
-  margin-left: 10px;
-  margin-right: 15px;
-  margin-bottom: 20px;
+display: flex;
+font-weight: 900;
+padding-bottom: 15px ; 
+padding-right: 25px;
+display: flex;
+align-items:flex-end;
 }
 
-.info_card {
+
+
+
+.validation{
+
   text-overflow: ellipsis;
-  white-space: nowrap;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
- cursor: pointer;
- transition: margin-right .5s;
+white-space: nowrap;
+  background-color: #99e2d0;
+  border-radius: 0 10px 10px  0 ;
+  width: 80px;
+  margin-right: -68px;
+  transition: all 0.1s;
+ animation-fill-mode: both;
 }
 
-.info_card .validation {
-  width: 25%;
-  margin-right: -100px;
-  display: flex;
-  align-items: center;
-  border-radius: 0 15px   15px  0;
-  background-color: #99E2D0; 
-  cursor: pointer;
-  transition: margin-right 1s;
-}
-
-.info_card:hover  .validation:hover{
-  margin-right: 0px;
-}
-
-
-
+.fa-check {
+  font-size: 16px;
+  color:#99e2d0;
+  display: grid;
+place-items: center;
+  border-radius: 50%;
+  width:30px;
+  background-color: white;
+border-radius: 50%;
+   
  
+}
+  
 
+
+:hover .validation{
+    margin-right: 0;
+    
+    
+}
+  
 
 
 /*Footer*/
