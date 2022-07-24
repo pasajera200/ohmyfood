@@ -34,8 +34,8 @@ header {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
   text-align: center;
-  box-shadow: 1px 3px 1px 0 lightgray;
-  padding: 15px;
+  box-shadow: 1px 1px 1px 0 lightgray;
+  padding: 20px;
   
 }
 
@@ -268,14 +268,14 @@ margin-top: 0px;
   background:linear-gradient(to bottom right, #e771da, #a35bdc);
   background-clip:text;
   -webkit-background-clip:text;
-  height: 50px;
+  height: 45px;
   opacity: 0;
   }
 
 .violet:hover {
   opacity: 1;
   transform: scale(1.1);
-  transition: all .1s;
+  transition: all .3s;
 }
 
 
@@ -367,25 +367,24 @@ border-radius: 10px;
 .info {
 padding: 15px 15px 10px 15px;
 width: 100%;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
 }
 
 .info p {
   margin-top: 3px;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+overflow: hidden;
 }
 
 
 .info_card {
 display: flex;
 justify-content: flex-end;
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
-
-margin-top: 0px;
 cursor: pointer;
-
-
+overflow: hidden;
 }
 
 
@@ -393,22 +392,24 @@ cursor: pointer;
 display: flex;
 font-weight: 700;
 margin-bottom: 10px ;
-padding-right: 25px; 
+padding-right: 10px; 
 margin-left: 0px;
 display: flex;
 align-items:flex-end;
+text-overflow: ellipsis;
+
 }
 
 
 
- .validation{
+ .info_card .validation{
   background-color: #99e2d0;
   border-radius: 0 10px 10px  0 ;
   width: 80px;
-  margin-right: -60px;
+  margin-right: -70px;
   padding: 0;
   transition:  0.3s;
- animation-fill-mode: ;
+ animation-fill-mode: both;
 }
 
 .fa-check {
@@ -422,10 +423,6 @@ align-items:flex-end;
 border-radius: 50%;
 }
 
-.fa-check:hover {
-  animation-name: rotation;
-  animation-duration: 0.5s;
-}
   
 
 @keyframes rotation {
@@ -439,10 +436,13 @@ border-radius: 50%;
 }
 
 
-.validation:hover {
-    margin-right: 0;
-    
-    
+.menu_restos .card_resto .info_card:hover .validation{
+    margin-right: 0;  
+}
+
+
+.menu_restos .card_resto .info_card:hover i {
+  animation: rotation 0.5s ease-in-out;
 }
   
 
