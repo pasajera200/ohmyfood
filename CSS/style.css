@@ -6,7 +6,12 @@
 }
 
 :root {
+  --Primaire: #9356DC; 
+  --Secondaire: #FF79DA; 
+  --Tertiaire: #99E2D0;
+  --lightgrey: lightgrey;
 }
+
 
 body {
   margin: 0px;
@@ -32,7 +37,7 @@ p {
 
 header {
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   box-shadow: 1px 1px 1px 0 lightgray;
   padding: 20px;
@@ -97,11 +102,12 @@ header {
 
 .reserver h2 {
   margin-top: 40px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .reserver p {
-  font-size: 28px;
+  margin-top: 5px;
+  font-size: 26px;
 }
 
 .button {
@@ -110,9 +116,9 @@ header {
   padding: 20px 20px;
   border: none;
   border-radius: 32px;
-  margin-top: 16px;
-  margin-bottom: 20px;
-  background: linear-gradient(to bottom right, #e771da, #a35bdc);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
   color: white;
   box-shadow: 5px 5px 20px #cfcfcf;
   cursor: pointer;
@@ -120,13 +126,15 @@ header {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom right, #f0ace8, #ae7ad8);
+  background: linear-gradient(to bottom right,  #f0ace8, #ae7ad8);
   box-shadow: 5px 5px 20px #aaa7a7;
 }
+
+
 /*Fonctionnement*/
 
 .explication h2 {
-  margin-left: 270px;
+  margin-left: 250px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -159,7 +167,7 @@ header {
   width: 30px;
   height: 10px;
   color: white;
-  background-color: #9356dc;
+  background-color: var(--Primaire);
   border-radius: 50%;
   margin: -40px;
   padding: 8px 15px 8px 15px;
@@ -170,12 +178,12 @@ header {
 .restaurants {
   background-color: #f3f3f3;
   margin-top: 70px;
-  height: 1000px;
+  height: 880px;
 }
 
 .restaurants h2 {
-  margin-left: 270px;
-  margin-bottom: 30px;
+  margin-left: 250px;
+  margin-bottom: 40px;
   padding-top: 50px;
 }
 
@@ -183,25 +191,23 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  gap:0;
+  gap: 50px;;
 }
 
 .restaurants_menu {
-  width: 30%;
-  height: 350px;
+  width: 33%;
+  height: 300px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 6px var(--lightgrey);
-  margin-bottom: 50px;
-  
 }
 
 .image_cardresto {
-  border-radius: 20px 20px 0 0;
-  height: 280px;
+  border-radius: 18px 18px 0 0;
+  height: 230px;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 70%;
+  object-position: 50% 60%;
 }
 
 .nouveau {
@@ -209,8 +215,8 @@ header {
   justify-content: right;
   position: absolute;
   margin-top: 21px;
-  margin-left: 360px;
-  background-color: #99e2d0;
+  margin-left: 410px;
+  background-color: var(--Tertiaire);
   color: black;
   padding: 7px 17px;
   border-radius: 3%;
@@ -218,9 +224,7 @@ header {
 
 .info_cardresto {
   width: 100%;
-  margin-right: 0px;
   display: flex;
-  margin-top: 0px;
 }
 
 .restaurant_nom h3 {
@@ -230,10 +234,7 @@ header {
 
 .restaurant_nom {
   width: 100%;
-  margin-right: 0px;
-  margin-top: 0px;
   margin-left: 20px;
-  gap: 0px;
   font-size: 18px;
 }
 
@@ -243,8 +244,7 @@ font-weight: bold;
 }
 
 .restaurant_nom2 {
-margin-top: 0px;
-  
+margin-top: 2px;
 }
 
 .coeur  {
@@ -265,7 +265,7 @@ margin-top: 0px;
 
 .violet {
   color:transparent;
-  background:linear-gradient(to bottom right, #e771da, #a35bdc);
+  background:linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
   background-clip:text;
   -webkit-background-clip:text;
   height: 45px;
@@ -287,14 +287,14 @@ margin-top: 0px;
   justify-content: space-around;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
-  padding-top: 30px;
-  
+  padding-top: 30px; 
 }
 
 .restaurant_titre h2 {
-  margin-right: 750px;
-  margin-left: 10px;
-  margin-top: 10px;
+  width: 100%;
+  margin-right: -250px;
+  margin-left: 30px;
+  margin-top: 5px;
 }
 
 
@@ -311,10 +311,10 @@ margin-top: 0px;
   font-size: 18px;
   border: none;
   border-radius: 32px;
-  margin-top: 50px;
-  margin-bottom: 120px;
+  margin-top: 90px;
+  margin-bottom: 80px;
   margin-left: 540px;
-  background: linear-gradient(to bottom right, #e771da, #a35bdc);
+  background: linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
   color: white;
   box-shadow: 5px 5px 20px #cfcfcf;
 }
@@ -330,12 +330,14 @@ margin-top: 0px;
 
 .ligne_verte {
   padding: 2px 30px;
-  background-color: #99e2d0;
+  background-color: var(--Tertiaire);
   margin-top: 55px;
   position: absolute;
+  margin-left: 10px;
 }
 
 .menu_restos h3 {
+  margin-left: 10px;
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 17px;
@@ -349,6 +351,7 @@ margin-top: 0px;
   gap: 20px;
 }
 
+
 .menus_conteneur {
   display: flex;
   flex-direction: row;
@@ -356,13 +359,17 @@ margin-top: 0px;
   margin-top: 40px;
 }
 
-
 .card_resto {
-  width: 100%;
+width: 100%;
 background-color: white;
 border-radius: 10px;
+overflow: hidden;
+margin: 5px;
+box-shadow: 2px 1px 8px -3px #7e7e7e;
+animation: chargement_menus  1s;
+animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+animation-fill-mode:both ;
 }
-
 
 .info {
 padding: 15px 15px 10px 15px;
@@ -397,13 +404,11 @@ margin-left: 0px;
 display: flex;
 align-items:flex-end;
 text-overflow: ellipsis;
-
 }
 
 
-
  .info_card .validation{
-  background-color: #99e2d0;
+  background-color: var(--Tertiaire);
   border-radius: 0 10px 10px  0 ;
   width: 80px;
   margin-right: -70px;
@@ -416,14 +421,38 @@ text-overflow: ellipsis;
   margin-left: 15px;
   margin-top: 22px;
   font-size: 16px;
-  color:#99e2d0;
+  color: var(--Tertiaire);
   border-radius: 50%;
   padding:5px;
   background-color: white;
-border-radius: 50%;
+ border-radius: 50%;
+}  
+
+
+
+@keyframes chargement_menus{
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-  
+.delay_0 {
+  animation-delay: 0.1s;
+}
+
+.delay_1 {
+  animation-delay: 0.6s;
+}
+ 
+.delay_2 {
+  animation-delay: 1s;
+}
+
 
 @keyframes rotation {
   from {
@@ -444,14 +473,11 @@ border-radius: 50%;
 .menu_restos .card_resto .info_card:hover i {
   animation: rotation 0.5s ease-in-out;
 }
-  
 
 
 /*Footer*/
 footer {
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -480,10 +506,6 @@ footer img {
   height: 10%;
 }
 
-#ohmyfood {
-  font-size: 17px;
-  font-family: "Shrikhand", cursive;
-}
 
 #proposer i {
   margin-right: 20px;
