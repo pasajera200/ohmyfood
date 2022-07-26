@@ -1,0 +1,496 @@
+@media screen and (max-width: 991px) /*Pour les tablettes*/ {
+    
+    
+header {
+    font-family: "Shrikhand", cursive;
+    font-size: 19px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 0 lightgray;
+    padding: 20px;
+    
+  }
+  
+  .fa-arrow-left {
+    margin-right: 0px;
+  }
+  
+  .fleche {
+    display: flex;
+    align-items: baseline;
+    margin-left: 150px;
+  }
+  
+  .ohmyfood h1
+  {
+    margin-left:  520px;
+  }
+  
+  
+  /*Couverture*/
+  
+  .couverture {
+    width: 100%;
+  }
+  
+  .image_couverture {
+    max-width: 100%;
+    max-height: 40%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 70%;
+  }
+  
+  /*Localisation*/
+  
+  .localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    box-shadow: 2px 1px 8px -3px black;
+    text-align: center;
+    padding: 20px;
+    gap: 16px;
+  }
+  
+  .fa-solid.fa-location-dot {
+    font-size: 20px;
+  }
+  
+  /*Explorer et réserver*/
+  
+  .reserver {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+  }
+  
+  .reserver h2 {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  
+  .reserver p {
+    margin-top: 5px;
+    font-size: 26px;
+  }
+  
+  .button {
+    font-weight: 300;
+    font-size: 18px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
+    color: white;
+    box-shadow: 5px 5px 20px #cfcfcf;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover {
+    background: linear-gradient(to bottom right,  #f0ace8, #ae7ad8);
+    box-shadow: 5px 5px 20px #aaa7a7;
+  }
+  
+  
+  /*Fonctionnement*/
+  
+  .explication h2 {
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .explication ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    margin-right: 40px;
+  }
+  
+  .explication li {
+    background-color: #f3f3f3;
+    padding: 20px 25px;
+    border-radius: 32px;
+    box-shadow: 2px 1px 8px -3px black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .explication li i {
+    margin-right: 15px;
+    border-radius: 30%;
+    margin-left: 50px;
+  }
+  
+  .etapes {
+    width: 30px;
+    height: 10px;
+    color: white;
+    background-color: var(--Primaire);
+    border-radius: 50%;
+    margin: -40px;
+    padding: 8px 15px 8px 15px;
+  }
+  
+  
+  /*Liste restaurants*/
+  .restaurants {
+    background-color: #f3f3f3;
+    margin-top: 70px;
+    height: 880px;
+  }
+  
+  .restaurants h2 {
+    margin-left: 250px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+  }
+  
+  .restaurants_conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 50px;;
+  }
+  
+  .restaurants_menu {
+    width: 33%;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 6px var(--lightgrey);
+    position:relative;
+  }
+  
+  .image_cardresto {
+    border-radius: 18px 18px 0 0;
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+  
+  .nouveau {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: var(--Tertiaire);
+    color: black;
+    padding: 7px 17px;
+    border-radius: 3%;
+  }
+  
+  .info_cardresto {
+    width: 100%;
+    display: flex;
+  }
+  
+  .restaurant_nom h3 {
+   margin-top: 5px;
+  }
+  
+  
+  .restaurant_nom {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .restaurant_nom1 {
+  font-size: 16px;
+  font-weight: bold;
+  }
+  
+  .restaurant_nom2 {
+  margin-top: 2px;
+  }
+  
+  .coeur  {
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 33px;
+    position: relative;
+    cursor: pointer;
+    
+  }
+  
+  .fa-regular {
+    margin-left:-33px;
+  }
+  
+  .violet {
+    color:transparent;
+    background:linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
+    background-clip:text;
+    -webkit-background-clip:text;
+    height: 45px;
+    opacity: 0;
+    }
+  
+  .violet:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+  
+  
+  
+  /*Menus restaurants*/
+  .restaurant_titre {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    padding-top: 30px; 
+  }
+  
+  .restaurant_titre h2 {
+    width: 100%;
+    margin-right: -250px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  
+  .restaurant_titre i {
+    margin-bottom: 10px;
+    margin-right: -2px;
+    font-size: 35px;
+  }
+  
+  
+  .menus button {
+    width: 15%;
+    font-weight: 300;
+    font-size: 18px;
+    border: none;
+    border-radius: 32px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 42%;
+    background: linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
+    color: white;
+    box-shadow: 5px 5px 20px #cfcfcf;
+  }
+  
+  .menus {
+    width: 80%;
+    background-color: #f3f3f3;
+    border-radius: 35px 35px 0 0;
+    margin-left: 150px;
+    margin-top: -100px;
+    position: relative;
+  }
+  
+  .ligne_verte {
+    padding: 2px 30px;
+    background-color: var(--Tertiaire);
+    margin-top: 55px;
+    position: absolute;
+    margin-left: 10px;
+  }
+  
+  .menu_restos h3 {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+  
+  .menu_restos {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .menus_conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .card_resto {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  animation: chargement_menus  1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode:both;
+  }
+  
+  .info {
+  padding: 15px 15px 10px 15px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+  
+  .info p {
+    margin-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  overflow: hidden;
+  }
+  
+  
+  .info_card {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  overflow: hidden;
+  }
+  
+  
+  .prix {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-right: 10px; 
+  display: flex;
+  align-items:flex-end;
+  text-overflow: ellipsis;
+  }
+  
+  
+   .info_card .validation{
+    background-color: var(--Tertiaire);
+    border-radius: 0 10px 10px  0 ;
+    width: 80px;
+    margin-right: -70px;
+    padding: 0;
+    transition:  0.3s;
+   animation-fill-mode: both;
+  }
+  
+  .fa-check {
+    margin-left: 15px;
+    margin-top: 22px;
+    font-size: 16px;
+    color: var(--Tertiaire);
+    border-radius: 50%;
+    padding:5px;
+    background-color: white;
+   border-radius: 50%;
+  }  
+  
+  
+  
+  @keyframes chargement_menus{
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .delay_0 {
+    animation-delay: 0.1s;
+  }
+  
+  .delay_1 {
+    animation-delay: 0.6s;
+  }
+   
+  .delay_2 {
+    animation-delay: 1s;
+  }
+  
+  
+  @keyframes rotation {
+    from {
+      transform:rotate(-270deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  
+  .menu_restos .card_resto .info_card:hover .validation{
+      margin-right: 0;  
+  }
+  
+  
+  .menu_restos .card_resto .info_card:hover i {
+    animation: rotation 0.5s ease-in-out;
+  }
+  
+  
+  /*Footer*/
+  footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    color: white;
+    background-color: #353535;
+    
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-left: -38px;
+    margin-top: 0px;
+  }
+  
+  .lien_footer {
+  color:white;
+  text-decoration: none;
+  }
+  
+  
+  footer img {
+    filter: invert(100%);
+    margin-top: 17px;
+    margin-bottom: 15px;
+    width: 8%;
+    height: 10%;
+  }
+  
+  
+  #proposer i {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #devenir i {
+    margin-right: 14px;
+    margin-bottom: 10px;
+  }
+  
+  #mentions {
+    margin-bottom: 10px;
+  }
+  
+  #contact {
+    margin-bottom: 10px;
+  }
+  
+
+
+
+    }
