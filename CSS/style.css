@@ -37,6 +37,8 @@ p {
   margin: 0;
 }
 
+/*Header*/
+
 header {
   font-family: "Shrikhand", cursive;
   font-size: 19px;
@@ -61,7 +63,65 @@ header {
   margin-left:  520px;
 }
 
+/*Loading spinner*/
 
+.spinner_conteneur {
+  background-color:rgba(255,255,255,0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  animation: aparition 300ms 3s;
+  animation-fill-mode:forwards;
+  background-repeat: no-repeat;
+ 
+}
+
+@keyframes aparition {
+  0% {
+    opacity: 1;
+  }
+  
+  100% {
+  opacity: 0;
+}
+}
+
+
+.spinner  {
+  background-color:white;
+  top: 530px;
+  left: 740px;
+  border: 16px solid var(--Primaire);
+  border-radius: 50%;
+  border-top: 16px solid var(--Secondaire);
+  border-bottom:16px solid var(--Tertiaire) ;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spinner 2s linear infinite; /* Safari */
+  animation: spinner 2s linear infinite;
+  position: absolute;
+  
+}
+
+/* Safari */
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner i {
+  width: 100%;
+  padding: 30px;
+  font-size: 30px;
+}
 /*Couverture*/
 
 .couverture {
