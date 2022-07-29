@@ -103,7 +103,6 @@ header {
   -webkit-animation: spinner 2s linear infinite; /* Safari */
   animation: spinner 2s linear infinite;
   position: absolute;
-  
 }
 
 /* Safari */

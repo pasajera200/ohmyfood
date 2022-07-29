@@ -27,7 +27,12 @@
     margin-left:  240px;
   }
   
-  
+  /*Loading spinner*/
+  .spinner  {
+    top: 430px;
+    left: 330px;
+  }
+
   /*Couverture*/
   
   .couverture {
@@ -120,7 +125,6 @@
   
   .menus button {
     width: 20%;
-    margin-left: %;
     margin-top: 50px;
   margin-bottom: 40px;
   }
