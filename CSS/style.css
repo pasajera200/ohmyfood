@@ -64,63 +64,43 @@ header {
 }
 
 /*Loading spinner*/
-
-.spinner_conteneur {
-  background-color:rgba(255,255,255,0.5);
+.loader {
   position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  opacity: 1;
-  animation: aparition 300ms 3s;
-  animation-fill-mode:forwards;
-  background-repeat: no-repeat;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 110vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.95;
+  animation: fadeout 200ms 3s forwards;
+  transform-origin: top;
 }
-
-@keyframes aparition {
-  0% {
-    opacity: 1;
-  }
-  
-  100% {
-  opacity: 0;
-}
-}
-
-
-.spinner  {
-  background-color:white;
-  top: 530px;
-  left: 740px;
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
   border: 16px solid var(--Primaire);
-  border-radius: 50%;
   border-top: 16px solid var(--Secondaire);
   border-bottom:16px solid var(--Tertiaire) ;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spinner 2s linear infinite; /* Safari */
-  animation: spinner 2s linear infinite;
-  position: absolute;
+  border-radius: 50%;
+  animation: spinner 1s ease-in-out;
+  animation-iteration-count: 3;
 }
 
-/* Safari */
-@-webkit-keyframes spinner {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+@keyframes fadeout {
+  to {
+    transform: scale(0);
+  }
 }
-
 @keyframes spinner {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.spinner i {
-  width: 100%;
-  padding: 30px;
-  font-size: 30px;
-}
+
 /*Couverture*/
 
 .couverture {
@@ -182,9 +162,9 @@ header {
   background: linear-gradient(to bottom right, var(--Secondaire), var(--Primaire));
   color: white;
   box-shadow: 5px 5px 20px #cfcfcf;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
+
 
 .button:hover {
   background: linear-gradient(to bottom right,  #f0ace8, #ae7ad8);
@@ -221,7 +201,7 @@ header {
 }
 
 
- .explication li:hover i{
+ .explication li:hover i {
   color: var(--Primaire);
 }
 
@@ -247,6 +227,7 @@ header {
   background-color: #f3f3f3;
   margin-top: 70px;
   height: 880px;
+  position: relative;
 }
 
 .restaurants h2 {
