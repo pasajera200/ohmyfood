@@ -443,6 +443,12 @@ overflow: hidden;
 overflow: hidden;
 }
 
+.info h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+overflow: hidden;
+}
+
 
 .info_card {
 display: flex;
