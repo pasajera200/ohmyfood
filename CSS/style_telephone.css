@@ -44,7 +44,7 @@
   /*Fonctionnement*/
 
   .explication {
-    padding: 30px  40px;
+    padding: 30px  30px;
     padding-bottom: 0;
   }
   
@@ -53,14 +53,14 @@
   }
   
   .explication ul {
-    gap: 30px;
+    gap: 35px;
     margin-right: 0;
     padding: 0;
   }
   
   
   .explication li {
-    width: 140%;
+    width: 100%;
     padding: 25px 0;
     border-radius: 20px;
     font-size: 18px;
@@ -80,16 +80,11 @@
   
   /*Liste restaurants*/
   .restaurants {
-    padding: 30px  40px;
+    padding: 30px  30px;
     height: 1250px;
   }
   
 
-  .restaurants h2 {
-    margin-left: 0px;
-    padding-top: 0px;
-  }
-  
   .restaurants_conteneur {
    display: flex;
    flex-direction: column;
@@ -108,7 +103,6 @@
   
   
   /*Menus restaurants*/
-  
   
   .restaurant_titre h2 {
     margin-right: -50px;
@@ -158,6 +152,10 @@
     flex-direction: column;
     margin-top: -20px;
   }
+
+  .fa-check {
+    margin-left: 14px;
+  }  
 
   
   
