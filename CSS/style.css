@@ -74,7 +74,9 @@ header {
   inset: 0;
   z-index: 1;
   opacity: 0.95;
+  -webkit-animation: fadeout 200ms 3s forwards;
   animation: fadeout 200ms 3s forwards;
+  -webkit-transform-origin: top;
   transform-origin: top;
 }
 .loader::after {
@@ -85,6 +87,7 @@ header {
   border-top: 16px solid var(--Secondaire);
   border-bottom:16px solid var(--Tertiaire) ;
   border-radius: 50%;
+  -webkit-animation: spinner 1s ease-in-out;
   animation: spinner 1s ease-in-out;
   animation-iteration-count: 3;
 }
@@ -424,6 +427,7 @@ overflow: hidden;
 margin: 5px;
 box-shadow: 2px 1px 8px -3px #7e7e7e;
 animation: chargement_menus  1s;
+-webkit-animation:chargement_menus  1s;
 animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 animation-fill-mode:both;
 }
@@ -478,6 +482,8 @@ text-overflow: ellipsis;
   margin-right: -70px;
   padding: 0;
   transition:  0.3s;
+  -webkit-transition: 0.3;
+  -webkit-animation-fill-mode: both;
  animation-fill-mode: both;
 }
 
@@ -535,6 +541,7 @@ text-overflow: ellipsis;
 
 
 .menu_restos .card_resto .info_card:hover i {
+  -webkit-animation: rotation 0.5s ease-in-out;
   animation: rotation 0.5s ease-in-out;
 }
 
