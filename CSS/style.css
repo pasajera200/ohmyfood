@@ -178,7 +178,7 @@ header {
 /*Fonctionnement*/
 
 .explication {
-  padding: 30px  160px;
+  padding: 30px  80px;
   padding-bottom: 0;
 }
 
@@ -194,12 +194,12 @@ header {
   justify-content: space-between;
   gap: 30px;
   list-style-type: none;
-  margin-right: 40px;
+  margin-right: 0px;
 }
 
 
 .explication li {
-  width: 30%;
+  width: 31%;
   background-color: #f3f3f3;
   padding: 25px 25px;
   border-radius: 20px;
@@ -215,7 +215,7 @@ header {
 }
 
 .explication li i {
-  margin-right: 20px;
+  margin-right: 10px;
   border-radius: 30%;
   margin-left: 50px;
 }
@@ -233,7 +233,7 @@ header {
 
 /*Liste restaurants*/
 .restaurants {
-  padding: 40px 160px; 
+  padding: 40px 80px; 
   background-color: #f3f3f3;
   margin-top: 70px;
   height: 880px;
@@ -251,11 +251,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  gap: 50px;;
+  gap: 80px;;
 }
 
 .restaurants_menu {
-  width: 48%;
+  width: 46%;
   height: 300px;
   background-color: white;
   border-radius: 20px;
@@ -510,6 +510,7 @@ text-overflow: ellipsis;
     opacity: 1;
   }
 }
+
 
 .delay_0 {
   animation-delay: 0.1s;
