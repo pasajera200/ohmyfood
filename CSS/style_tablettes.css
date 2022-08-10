@@ -70,7 +70,7 @@
   
   /*Fonctionnement*/
   .explication {
-    padding: 30px  60px;
+    padding: 30px  50px;
     padding-bottom: 0;
   }
   
@@ -106,8 +106,13 @@
   
   /*Liste restaurants*/
   .restaurants {
-    padding: 30px  60px;
+    padding: 30px  50px;
     height: 800px;
+  }
+
+  .restaurants_conteneur {
+
+    gap: 70px;;
   }
   
   .restaurants h2 {

@@ -91,7 +91,6 @@ header {
   animation: spinner 1s ease-in-out;
   animation-iteration-count: 3;
 }
-
 @keyframes fadeout {
   to {
     transform: scale(0);
