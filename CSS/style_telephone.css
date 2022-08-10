@@ -13,7 +13,7 @@
   
   .ohmyfood h1
   {
-    margin-left:  40px;
+    margin-left:  20px;
   }
   
   /*Loading spinner*/
@@ -44,7 +44,7 @@
   /*Fonctionnement*/
 
   .explication {
-    padding: 30px  30px;
+    padding: 30px  18px;
     padding-bottom: 0;
   }
   
@@ -63,13 +63,13 @@
     width: 100%;
     padding: 25px 0;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
   }
   
   .explication li i {
-    margin-right: 15px;
-    margin-left: 30px;  
+    margin-right: 10px;
+    margin-left: 20px;  
   }
 
   .etapes {
@@ -80,8 +80,8 @@
   
   /*Liste restaurants*/
   .restaurants {
-    padding: 30px  30px;
-    height: 1250px;
+    padding: 30px  15px;
+    height: 1200px;
   }
   
 
@@ -90,28 +90,55 @@
    flex-direction: column;
    gap: 30px;;
   }
+ 
   
   .restaurants_menu {
     width: 100%;
-    height: 250px;
+    height: 240px;
     margin-left: 0px;
   }
+
+  .restaurant_nom {
+    margin-left: 6px;
+    font-size: 16px;
+  }
+  .restaurant_nom1 {
+    font-size: 14px;
+    }  
+    
+  .coeur  {
+  margin-top: 7px;
+  margin-right: 5px;
+  font-size: 25px;
+  }
   
+ .fa-regular {
+  margin-left:-25.45px;
+  }
+
   .image_cardresto {
     height: 180px;
   }
   
   
   /*Menus restaurants*/
-  
+   
+  .restaurant_titre {
+    font-size: 14px;  
+  }
+
+  .restaurant_titre i {
+    margin-right: -4.7px;
+    font-size: 30px;
+  }
+
   .restaurant_titre h2 {
     margin-right: -50px;
     margin-left: 10px;
   }
   
-  
   .menus button {
-    width: 40%;
+    width: 48%;
     margin-left: 30%;
     margin-top: 50px;
   margin-bottom: 40px;
